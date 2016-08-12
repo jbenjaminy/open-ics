@@ -1,0 +1,240 @@
+/*---------- PRESETS ---------*/
+@Green: #77BEBB;
+@LtGrey: #A5ABAD;
+@DkGrey: #4c5058;
+
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro|Open+Sans|Droid+Sans:400,500,300);
+
+.app {
+  	font-family: 'Droid Sans', 'Source Sans Pro', 'Open Sans', sans-serif;
+  	-webkit-font-smoothing: antialiased;
+
+  	a {
+		color: inherit;
+		font-style: normal;
+	}
+
+	a:hover {
+		cursor: pointer;
+	}
+
+	.content {
+		width: 80%;
+		margin: 0 auto;
+		padding: 0px 15px;
+		color: @DkGrey
+	}
+
+	.hidden {
+  		display: none;
+	}
+}
+
+/*--------- FIXED CONTENT ---------*/
+
+// NAV
+nav {
+	background-color: white;
+	position: fixed;
+	width: 100%;
+	z-index: 100;
+
+	ul {
+		margin: auto auto;
+		float: right;
+		color: @Green;
+		// font-size: ;
+
+		li {
+			display: inline-block;
+			margin-left: 15px;
+		}
+
+		li:hover {
+			cursor: pointer;
+			color: @DkGrey;
+		}
+	}
+}
+
+// HEADER
+header {
+	background-image: url('background.jpg');
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 40.938rem;
+	overflow: auto;
+	
+	.header-text {
+		text-align: left;
+	
+		h1 {
+			margin-top:13rem;
+			font-size: 3.335rem;
+			margin-bottom: 0;
+			text-shadow: 1px 2.1px 0px @Green;
+			color: white;
+			font-weight: 100;
+		}
+
+		h3 {
+			margin-top: .35rem;
+			font-size: 1.5rem;
+			color: @LtGrey;
+	  		text-shadow: 1px 2px 0px @DkGrey;
+			font-weight: 300;
+		}
+	}
+
+	.header-text:hover {
+		cursor: pointer;
+	}
+}
+
+// FOOTER
+footer {
+	width: 100%;
+	background-color: @Green;
+	overflow: auto;
+	padding-bottom: 9.375rem;
+	text-align: center;
+
+	.social {
+
+		hr {
+			border: 0;
+    		border-top: 1px solid @DkGrey;
+    		margin: 1.313rem 0;
+		}
+		
+		ul {
+			padding-left: 0px;
+
+			li {
+				border-radius: 1.25rem;
+			    width: 2.5rem;
+			    height: 2.5rem;
+			    display: inline-block;
+			    margin: 1.25rem 5px;
+			    border: 1px solid #eaebec;
+			    padding: 0.625rem 0;
+			    text-align: center;
+			}
+
+			li:hover {
+    			cursor: pointer;
+			}
+
+			.linkedin {
+			    color: #0077B5;
+			}
+			.github {
+			    color: #6CC644;
+			}
+			.google-plus {
+			    color: #dc4e41;
+			}
+		}
+	}
+
+	.attribution {
+		h5 {
+			color: #A5ABAD;
+			font-weight: 300;
+		}
+
+		img {
+			border-width: 0;
+		}
+	}
+}
+
+.main {
+	width: 100%;
+	background-color: white;
+	overflow: hidden;
+	padding-bottom: 5rem;
+
+	h2 {
+		font-size: 2.75rem;
+		margin: 1.625rem 0 3.125rem;
+		font-weight: 300;
+		color: @Green;
+	}
+}
+
+/*---------- VARIABLE CONTENT ----------*/
+
+// HOME
+.news {
+	margin-top: 7.875rem;
+	padding: none;
+	text-align: center;	
+
+	h4 {
+		font-style: underline;
+	}
+
+	ul {
+		li {
+			width: 33.3333333%;
+			float: left;
+			display: inline-block;
+			box-sizing: border-box;
+
+			h3 {
+				font-weight: 400;
+				font-size: 1.563rem;
+				margin: 2.5rem 0px 1.875rem;
+			}
+		}
+	}
+}
+
+.mailing-list {
+
+	input {
+		margin-top: 2%;
+	    width: 20rem;
+	    border: 1px solid grey;
+	    border-radius: 0.25em;
+	    text-align: center;
+  	}
+
+  	button {
+		border: 1px solid #5F9EA0;
+		border-radius: 0.25em;
+		background-color: #5F9EA0;
+		color: white;
+	}
+
+	button:hover {
+		cursor: pointer;
+	}
+
+  	h4 {
+  		font-weight: lighter;
+  		color: grey;
+  		font-size: 0.8em;
+  		font-style: italic;
+  	}
+}
+
+.partners {
+	ul {
+		li {
+			list-style-type: none;
+			display: inline-block;
+		}
+	}
+}
+
+
+// html {
+// 	box-sizing: border-box;
+// }
+// *, *:before, *:after {
+// 	box-sizing: inherit;
+// }
+
