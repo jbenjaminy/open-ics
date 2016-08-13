@@ -9,7 +9,7 @@ var Events = React.createClass ({
 				<div className='main'>
 					<div className='events content'>
 						<h2>Events</h2>
-						<h3>Upcoming lecture @ University of Houston (date?)</h3>
+						<h3>Upcoming lecture @ University of Houston; August 25, 2016</h3>
 						<p>Topic: Intro to the OpenICS™ Project</p>
 						<p>Speaker: Brett Young, Lockheed Martin</p>
 						<div className='attendees'>
