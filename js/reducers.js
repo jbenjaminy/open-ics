@@ -15,7 +15,7 @@ var reducer = function(state, action) {
 		});
 	} else if (action.type === actions.FETCH_ADD_TO_LIST_ERROR) {
 		return Object.assign({}, state, {
-			status: action.error
+			status: '"Error: Internal Server Error" ― Please try a different email address, as this one may already be in our system. If you continue having problems, please try again later.'
 		});
 	} else {
 		return state;

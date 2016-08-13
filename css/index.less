@@ -1,5 +1,6 @@
 /*---------- PRESETS ---------*/
 @Green: #77BEBB;
+@Grey: #A5ABAD;
 @LtGrey: #A5ABAD;
 @DkGrey: #4c5058;
 
@@ -12,6 +13,7 @@
   	a {
 		color: inherit;
 		font-style: normal;
+		text-decoration: none;
 	}
 
 	a:hover {
@@ -28,6 +30,10 @@
 	.hidden {
   		display: none;
 	}
+
+	.links {
+		text-decoration: none;
+	}
 }
 
 /*--------- FIXED CONTENT ---------*/
@@ -37,17 +43,22 @@ nav {
 	background-color: white;
 	position: fixed;
 	width: 100%;
+	height: 50px;
+	margin-top: -11px;
 	z-index: 100;
 
 	ul {
-		margin: auto auto;
-		float: right;
-		color: @Green;
-		// font-size: ;
+		height: 40px;
+		margin: 0 auto;
 
 		li {
+			margin-left: 30px;
+			color: @Green;
+			text-decoration: none;
+			list-style-type: none;
 			display: inline-block;
-			margin-left: 15px;
+			float: right;
+			margin-top: 16px;		
 		}
 
 		li:hover {
@@ -58,30 +69,30 @@ nav {
 }
 
 // HEADER
-header {
-	background-image: url('background.jpg');
+.header {
+	background-image: url('background.png');
 	background-position: center bottom;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 40.938rem;
+	height: 35rem;
 	overflow: auto;
 	
 	.header-text {
 		text-align: left;
 	
 		h1 {
-			margin-top:13rem;
-			font-size: 3.335rem;
+			margin-top: 25rem;
+			font-size: 45px;
 			margin-bottom: 0;
-			text-shadow: 1px 2.1px 0px @Green;
+			text-shadow: 1px 2.075px 0px @Green;
 			color: white;
 			font-weight: 100;
 		}
 
 		h3 {
-			margin-top: .35rem;
-			font-size: 1.5rem;
-			color: @LtGrey;
+			margin-top: 0.05rem;
+			font-size: 16.75px;
+			color: @Grey;
 	  		text-shadow: 1px 2px 0px @DkGrey;
 			font-weight: 300;
 		}
@@ -92,38 +103,82 @@ header {
 	}
 }
 
+.link-header {
+	background-image: url('background.png');
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 16rem;
+	overflow: auto;
+	
+	.header-text {
+		text-align: left;
+	
+		h1 {
+			margin-top: 6rem;
+			font-size: 45px;
+			margin-bottom: 0;
+			text-shadow: 1px 2.075px 0px @Green;
+			color: white;
+			font-weight: 100;
+		}
+
+		h3 {
+			margin-top: 0.05rem;
+			font-size: 16.75px;
+			color: @Grey;
+	  		text-shadow: 1px 2px 0px @DkGrey;
+			font-weight: 300;
+		}
+	}
+
+	.header-text:hover {
+		cursor: pointer;
+
+		h1 {
+			color: darken(@Green, 10%);
+		}
+
+		h3 {
+			color: darken(@Grey, 10%);
+		}
+	}
+}
+
 // FOOTER
 footer {
 	width: 100%;
 	background-color: @Green;
 	overflow: auto;
-	padding-bottom: 9.375rem;
+	padding-bottom: 3rem;
 	text-align: center;
 
 	.social {
-
-		hr {
-			border: 0;
-    		border-top: 1px solid @DkGrey;
-    		margin: 1.313rem 0;
-		}
 		
 		ul {
 			padding-left: 0px;
+			margin-bottom: 0;
 
 			li {
+				background-color: white;
 				border-radius: 1.25rem;
-			    width: 2.5rem;
-			    height: 2.5rem;
+			    width: 36px;
+			    height: 36px;
 			    display: inline-block;
-			    margin: 1.25rem 5px;
-			    border: 1px solid #eaebec;
-			    padding: 0.625rem 0;
+			    margin: 1.25rem 7px;
+			    border: 1px solid white;
 			    text-align: center;
+
+			    i {
+			    	margin: 0 auto;
+			    	margin-top: 10px;
+			    }
 			}
 
 			li:hover {
     			cursor: pointer;
+    			background-color: lighten(@LtGrey, 10%);
+    			border-color: lighten(@LtGrey, 10%);
 			}
 
 			.linkedin {
@@ -136,31 +191,72 @@ footer {
 			    color: #dc4e41;
 			}
 		}
+
+		h5 {
+			color: @DkGrey;
+			font-weight: 300;
+			margin-top: 0;
+		}
+
+		h5:hover {
+			color: white;
+		}
+
+		hr {
+			width: 50%;
+			border: 0;
+    		border-top: 1px solid @DkGrey;
+    		margin: auto auto;
+		}
 	}
 
 	.attribution {
 		h5 {
-			color: #A5ABAD;
+			color: @DkGrey;
 			font-weight: 300;
+			font-size: .7rem;
+			margin-top: 35px;
+		}
+
+		a:hover {
+			color: white;
 		}
 
 		img {
-			border-width: 0;
+			border: 0;
 		}
 	}
 }
 
 .main {
 	width: 100%;
-	background-color: white;
+	background-color: #eaebec;
 	overflow: hidden;
 	padding-bottom: 5rem;
+	min-height: 20rem;
+	
 
-	h2 {
-		font-size: 2.75rem;
-		margin: 1.625rem 0 3.125rem;
-		font-weight: 300;
+	.content {
+		text-align: left;
+		padding-left: 10%;
+
+		h2 {
+		font-size: 2.25rem;
 		color: @Green;
+		font-weight: 300;
+		margin: 15px auto;
+		}
+
+		h3 {
+			font-weight: 300;
+			padding-left: 5%;
+			margin-top: 15px;
+		}
+
+		p {
+			font-weight: 300;
+		}
+		
 	}
 }
 
@@ -172,27 +268,65 @@ footer {
 	padding: none;
 	text-align: center;	
 
-	h4 {
-		font-style: underline;
+	.links {
+		font-weight: 500;
+		color: @Green;
+	}
+	.links:hover, a:hover {
+		color: darken(@Green, 20%);
 	}
 
-	ul {
-		li {
-			width: 33.3333333%;
-			float: left;
-			display: inline-block;
-			box-sizing: border-box;
+	.open-ics-news {
+		margin-bottom: 50px;
 
-			h3 {
-				font-weight: 400;
-				font-size: 1.563rem;
-				margin: 2.5rem 0px 1.875rem;
+		.h3 {
+			white-space: nowrap;
+		}
+
+	}
+
+	hr {
+		width: 85%;
+		border: 0;
+    	border-top: 1px solid @DkGrey;
+    	margin: auto 0;
+	}
+	
+	.related-news {
+		margin-top: 50px;
+
+		ul {
+			width: 80%;
+
+			li {
+				width: 33.3333333%;
+				float: left;
+				display: inline-block;
+				box-sizing: border-box;
+				text-align: center;
+				padding-right: 20px;
+
+				h4 {
+					width: 300;
+					margin: 15px auto;
+					font-weight: 300;
+					font-size: 0.84rem;
+					text-align: left;
+				}
+			}
+
+			.rectangle {
+				margin-top: 27px;
 			}
 		}
+	
 	}
 }
 
 .mailing-list {
+	form {
+		padding-left: 5%;
+	}
 
 	input {
 		margin-top: 2%;
@@ -203,17 +337,21 @@ footer {
   	}
 
   	button {
-		border: 1px solid #5F9EA0;
+  		margin-top: 2%;
+		border: 1px solid @Green;
 		border-radius: 0.25em;
-		background-color: #5F9EA0;
+		background-color: @Green;
 		color: white;
 	}
 
 	button:hover {
 		cursor: pointer;
+		background-color: @Grey;
+		border: 1px solid @Grey;
 	}
 
   	h4 {
+  		padding-left: 5%;
   		font-weight: lighter;
   		color: grey;
   		font-size: 0.8em;
@@ -221,11 +359,90 @@ footer {
   	}
 }
 
+.about {
+
+	p {
+		width: 80%;
+		padding-left: 5%;
+		font-size: 0.85rem;
+		font-weight: 300;
+	}
+
+	.benefits {
+		width: 80%;
+		padding-left: 5%;
+
+		h4 {
+			font-weight: 300;
+		}
+	}
+
+	li {
+
+		font-size: 0.85rem;
+		font-weight: 300;
+	}
+}
+
+.events {
+
+	p {
+		width: 80%;
+		padding-left: 10%;
+		font-size: 0.85rem;
+		font-weight: 300;
+	}
+
+	.attendees {
+		width: 80%;
+		padding-left: 5%;
+
+		h4 {
+			font-weight: 300;
+		}
+
+		p {
+			padding-left: 0;
+		}
+
+		a {
+			color: @Green;
+		}
+
+		a:hover {
+			color: darken(@Green, 20%);
+		}
+	}
+
+	li {
+
+		font-size: 0.85rem;
+		font-weight: 300;
+	}
+}
+
+.projects {
+
+	img {
+		padding-left: 5%;
+	}
+}
+
 .partners {
 	ul {
+		max-height: 90px;
+
 		li {
+			margin-left: 5%;
 			list-style-type: none;
 			display: inline-block;
+		}
+
+		.arista {
+
+			img {
+				padding-bottom: 16px;
+			}
 		}
 	}
 }

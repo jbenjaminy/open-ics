@@ -22,19 +22,19 @@ app.use(function(request, response, next) {
 /* ----------- USER ENDPOINTS ---------- */
 
 // POST NEW CONTACTS TO MAILING LIST
-app.post('/users', jsonParser, function(request, response) {
+app.post('/contacts', jsonParser, function(request, response) {
     var email = request.body.email.trim();
-    var firstName = request.body.firstName.trim();
-    var lastName = request.body.lastName.trim();
+    var firstname = request.body.firstName.trim();
+    var lastname = request.body.lastName.trim();
     var occupation = request.body.occupation.trim();
 
     knex.insert({
         email: email,
-        firstName: firstName,
-        lastName: lastName,
+        firstname: firstname,
+        lastname: lastname,
         occupation: occupation 
         })
-        .into('users')
+        .into('contacts')
         .then(function() {
             console.log('post new contact success');
             return response.status(201).json({
@@ -47,7 +47,7 @@ app.post('/users', jsonParser, function(request, response) {
         });
 });
 
-var port = process.env.PORT || 8080;
+var port = process.env.PORT || 8081;
 app.listen(port, function() {
     console.log('Listening on port:' + port);
 });

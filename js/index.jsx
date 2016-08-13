@@ -3,10 +3,11 @@ var ReactDOM = require('react-dom');
 var router = require('react-router');
 var Provider = require( 'react-redux' ).Provider;
 
-var Router = router.Router;
-var hashHistory = router.hashHistory;
 var Route = router.Route;
 var IndexRoute = router.IndexRoute;
+
+import { applyRouterMiddleware, hashHistory, Router }  from 'react-router';
+import { useScroll } from 'react-router-scroll';
 
 var actions = require('./actions');
 var store = require( './store' );
@@ -26,8 +27,7 @@ var App = function(props) {
     return (
         <div className='app'>
             <Nav/>
-            <Header/>
-            <div className='main'>
+            <div>
                 {props.children}
             </div>
             <Footer/>
@@ -36,7 +36,7 @@ var App = function(props) {
 };
 // TODO: UPDATE LINKS - <Link to={`/messages/${this.props.message.uid}`}
 var routes = (
-  <Router history={hashHistory}>
+  // <Router history={hashHistory}>
     <Route path='/' component={App}>
       <IndexRoute component={Home}/>
       <Route path='mailinglist' component={MailingList}/>
@@ -46,7 +46,7 @@ var routes = (
       <Route path='toolkit' component={Toolkit}/>
       <Route path='partners' component={Partners}/>
     </Route>
-  </Router>
+  // </Router>
 );
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -54,6 +54,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
     ReactDOM.render(
       <Provider store={store}>
-        {routes}
+        <Router 
+          history={hashHistory}
+          routes={routes}
+          render={applyRouterMiddleware(useScroll())}
+        />
       </Provider>, document.getElementById('app'));
 });

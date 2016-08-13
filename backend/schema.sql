@@ -1,7 +1,7 @@
 create table if not exists contacts (
 	id serial primary key,
 	email text not null unique,
-	firstName text not null,
-	lastName text,
+	firstname text not null,
+	lastname text,
 	occupation text
 );

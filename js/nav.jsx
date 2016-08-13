@@ -6,16 +6,12 @@ var Nav = React.createClass({
 	render: function() {
 		return (
 			<nav>
-        <ul className='links content'>
-          <li><Link to={'/about'}>About</Link></li>
-          <br/>
-          <li><Link to={'/events'}>Events</Link></li>
-          <br/>
-          <li><Link to={'/projects'}>Projects</Link></li>
-          <br/>
-          <li><Link to={'/toolkit'}>Toolkit</Link></li>
-          <br/>
-          <li><Link to={'/partners'}>Partners</Link></li>
+        <ul className='content'>
+          <li><Link to={'/partners'} className='links'>Partners</Link></li>
+          <li><Link to={'/toolkit'} className='links'>Toolkit</Link></li>
+          <li><Link to={'/projects'} className='links'>Projects</Link></li>
+          <li><Link to={'/events'} className='links'>Events</Link></li>
+          <li><Link to={'/about'} className='links'>About</Link></li>
         </ul>
       </nav>
 		);

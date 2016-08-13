@@ -12,7 +12,7 @@ var pageLoad = function() {
 // POST NEW USER
 var fetchAddToList = function(userObj) {
     return function(dispatch) {
-        var url = 'http://localhost:8080/users';
+        var url = 'http://localhost:8081/contacts';
         var request = {
             method: 'post',
             headers: {
@@ -38,7 +38,8 @@ var fetchAddToList = function(userObj) {
         .then(function(response) {
             return response.json();
         })
-        .then(function(message) {
+        .then(function(data) {
+            var message = data.message;
             return dispatch(
                 fetchAddToListSuccess(message)
             );
