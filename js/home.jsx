@@ -12,7 +12,7 @@ var Home = React.createClass ({
 					<div className='news content'>
 						<div className='open-ics-news'>
 							<h2>News</h2>
-							<h3>Stay up-to-date with The OpenICS&#8482; Project &#8213;<Link to={'/mailinglist'} className='links'> Join our mailing list!</Link></h3>
+							<h3>Stay up-to-date with The OpenICS&#8482; Project &#8213;<a href='http://eepurl.com/celXwf'>Join our mailing list!</a></h3>
 						</div>
 						<hr/>
 						<div className='related-news'>
@@ -30,9 +30,9 @@ var Home = React.createClass ({
 										<h4>"Smart grid startup gets funding boost..."</h4>
 									</a>
 								</li>
-								<li>
+								<li className='rectangle'>
 									<a href='https://insights.ubuntu.com/2015/11/17/canonicals-openstack-autopilot-dramatically-reduces-cost-of-private/'>
-										<img src='https://blogsprod.s3.amazonaws.com/blogs/wp-content/uploads/2015/04/OpenStack-logo.png' alt='Openstack' height='127' width='127'></img>
+										<img src='http://cdn4.computerworlduk.com/cmsdata/features/3628191/openstack_logo_thumb800.jpg' alt='Openstack' height='100' width='150'></img>
 										<h4>"Canonical’s Openstack Autopilot dramatically reduces cloud costs"</h4>
 									</a>
 								</li>

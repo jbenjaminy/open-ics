@@ -7,9 +7,7 @@
     "test": "mocha --compilers js:babel-register test/**/*.js*",
     "mkdir": "mkdir -p build",
     "build": "npm run clean && npm run mkdir && npm run build:html && npm run build:css && npm run build:js && npm run build:img",
-    "dev": "webpack-dev-server --content-base build/ --hot",
-    "http": "http-server build/",
-    "server": "node backend/server.js",
+    "server": "http-server build/",
     "watch": "npm run watch:html & npm run watch:css & npm run watch:js & npm run watch:img",
     "clean": "rm -rf build",
     "build:html": "npm run clean:html && cp index.html build/",
@@ -25,28 +23,14 @@
     "clean:img": "rm -rf build/img/",
     "watch:img": "npm run build:img && webpack --watch"
   },
-  "babel": {
-    "presets": [
-      "es2015",
-      "react"
-    ]
-  },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.15.2",
-    "express": "^4.14.0",
-    "isomorphic-fetch": "^2.2.1",
-    "knex": "^0.11.9",
-    "pg": "^6.0.3",
     "react": "^15.2.1",
     "react-dom": "^15.2.1",
-    "react-redux": "^4.4.5",
     "react-router": "^2.6.0",
-    "react-router-scroll": "^0.3.1",
-    "redux": "^3.5.2",
-    "redux-thunk": "^2.1.0",
-    "unirest": "^0.5.0"
+    "react-router-scroll": "^0.3.1"
   },
   "devDependencies": {
     "babel-core": "^6.11.4",
@@ -54,14 +38,9 @@
     "babel-preset-es2015": "^6.9.0",
     "babel-preset-react": "^6.11.1",
     "babel-register": "^6.11.6",
-    "chai": "^3.5.0",
     "chokidar-cli": "^1.2.0",
     "http-server": "^0.9.0",
     "less": "^2.7.1",
-    "mocha": "^2.5.3",
-    "react-addons-test-utils": "^15.2.1",
-    "react-hot-loader": "^1.3.0",
-    "webpack": "^1.13.1",
-    "webpack-dev-server": "^1.14.1"
+    "webpack": "^1.13.1"
   }
 }

@@ -13,7 +13,7 @@ var Footer = React.createClass({
 						<li className='google-plus'><a href='https://plus.google.com/u/0/communities/109016780045029597935'><i className='fa fa-google-plus'></i></a></li>
 						<li className='linkedin'><a href='https://www.linkedin.com/groups/8447868/profile'><i className='fa fa-linkedin'></i></a></li>
 					</ul>
-					<h5><Link to={'/mailinglist'} className='links'>Join the OpenICS&#8482; mailing list.</Link></h5>
+					<h5><a href='http://eepurl.com/celXwf'>Join our mailing list!</a></h5>
 					<hr/>
 				</div>
 				<div className='attribution content'>
