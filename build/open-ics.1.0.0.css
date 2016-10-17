@@ -1,0 +1,340 @@
+/*---------- PRESETS ---------*/
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro|Open+Sans|Droid+Sans:400,500,300);
+.app {
+  font-family: 'Droid Sans', 'Source Sans Pro', 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+.app a {
+  color: inherit;
+  font-style: normal;
+  text-decoration: none;
+}
+.app a:hover {
+  cursor: pointer;
+}
+.app .content {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0px 15px;
+  color: #4c5058;
+}
+.app .hidden {
+  display: none;
+}
+.app .links {
+  text-decoration: none;
+}
+/*--------- FIXED CONTENT ---------*/
+nav {
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  margin-top: -11px;
+  z-index: 100;
+}
+nav ul {
+  height: 40px;
+  margin: 0 auto;
+}
+nav ul li {
+  margin-left: 30px;
+  color: #77BEBB;
+  text-decoration: none;
+  list-style-type: none;
+  display: inline-block;
+  float: right;
+  margin-top: 16px;
+}
+nav ul li:hover {
+  cursor: pointer;
+  color: #4c5058;
+}
+.header {
+  background-image: url('http://i.imgur.com/hWq8Qzc.png');
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 35rem;
+  overflow: auto;
+}
+.header .header-text {
+  text-align: left;
+}
+.header .header-text h1 {
+  margin-top: 25rem;
+  font-size: 45px;
+  margin-bottom: 0;
+  text-shadow: 1px 2.075px 0px #77BEBB;
+  color: white;
+  font-weight: 100;
+}
+.header .header-text h3 {
+  margin-top: 0.05rem;
+  font-size: 16.75px;
+  color: #A5ABAD;
+  text-shadow: 1px 2px 0px #4c5058;
+  font-weight: 300;
+}
+.header .header-text:hover {
+  cursor: pointer;
+}
+.link-header {
+  background-image: url('http://i.imgur.com/hWq8Qzc.png');
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 16rem;
+  overflow: auto;
+}
+.link-header .header-text {
+  text-align: left;
+}
+.link-header .header-text h1 {
+  margin-top: 6rem;
+  font-size: 45px;
+  margin-bottom: 0;
+  text-shadow: 1px 2.075px 0px #77BEBB;
+  color: white;
+  font-weight: 100;
+}
+.link-header .header-text h3 {
+  margin-top: 0.05rem;
+  font-size: 16.75px;
+  color: #A5ABAD;
+  text-shadow: 1px 2px 0px #4c5058;
+  font-weight: 300;
+}
+.link-header .header-text:hover {
+  cursor: pointer;
+}
+.link-header .header-text:hover h1 {
+  color: #54aeaa;
+}
+.link-header .header-text:hover h3 {
+  color: #8a9295;
+}
+footer {
+  width: 100%;
+  background-color: #77BEBB;
+  overflow: auto;
+  padding-bottom: 3rem;
+  text-align: center;
+}
+footer .social ul {
+  padding-left: 0px;
+  margin-bottom: 0;
+}
+footer .social ul li {
+  background-color: white;
+  border-radius: 1.25rem;
+  width: 36px;
+  height: 36px;
+  display: inline-block;
+  margin: 1.25rem 7px;
+  border: 1px solid white;
+  text-align: center;
+}
+footer .social ul li i {
+  margin: 0 auto;
+  margin-top: 10px;
+}
+footer .social ul li:hover {
+  cursor: pointer;
+  background-color: #c0c4c5;
+  border-color: #c0c4c5;
+}
+footer .social ul .linkedin {
+  color: #0077B5;
+}
+footer .social ul .github {
+  color: #6CC644;
+}
+footer .social ul .google-plus {
+  color: #dc4e41;
+}
+footer .social h5 {
+  color: #4c5058;
+  font-weight: 300;
+  margin-top: 0;
+}
+footer .social h5:hover {
+  color: white;
+}
+footer .social hr {
+  width: 50%;
+  border: 0;
+  border-top: 1px solid #4c5058;
+  margin: auto auto;
+}
+footer .attribution h5 {
+  color: #4c5058;
+  font-weight: 300;
+  font-size: .7rem;
+  margin-top: 35px;
+}
+footer .attribution a:hover {
+  color: white;
+}
+footer .attribution img {
+  border: 0;
+}
+.main {
+  width: 100%;
+  background-color: #eaebec;
+  overflow: hidden;
+  padding-bottom: 5rem;
+  min-height: 20rem;
+}
+.main .content {
+  text-align: left;
+  padding-left: 10%;
+}
+.main .content h2 {
+  font-size: 2.25rem;
+  color: #77BEBB;
+  font-weight: 300;
+  margin: 15px auto;
+}
+.main .content h3 {
+  font-weight: 300;
+  padding-left: 5%;
+  margin-top: 15px;
+}
+.main .content p {
+  font-weight: 300;
+}
+/*---------- VARIABLE CONTENT ----------*/
+.news {
+  margin-top: 7.875rem;
+  padding: none;
+  text-align: center;
+}
+.news .links {
+  font-weight: 500;
+  color: #77BEBB;
+}
+.news .links:hover,
+.news a:hover {
+  color: #438c89;
+}
+.news .open-ics-news {
+  margin-bottom: 50px;
+}
+.news hr {
+  width: 85%;
+  border: 0;
+  border-top: 1px solid #4c5058;
+  margin: auto 0;
+}
+.news .related-news {
+  margin-top: 50px;
+}
+.news .related-news ul {
+  width: 80%;
+}
+.news .related-news ul li {
+  width: 33.3333333%;
+  float: left;
+  display: inline-block;
+  box-sizing: border-box;
+  text-align: center;
+  padding-right: 20px;
+}
+.news .related-news ul li h4 {
+  width: 300;
+  margin: 15px auto;
+  font-weight: 300;
+  font-size: 0.84rem;
+  text-align: left;
+}
+.news .related-news ul .rectangle {
+  margin-top: 27px;
+}
+.mailing-list form {
+  padding-left: 5%;
+}
+.mailing-list input {
+  margin-top: 2%;
+  width: 20rem;
+  border: 1px solid grey;
+  border-radius: 0.25em;
+  text-align: center;
+}
+.mailing-list button {
+  margin-top: 2%;
+  border: 1px solid #77BEBB;
+  border-radius: 0.25em;
+  background-color: #77BEBB;
+  color: white;
+}
+.mailing-list button:hover {
+  cursor: pointer;
+  background-color: #A5ABAD;
+  border: 1px solid #A5ABAD;
+}
+.mailing-list h4 {
+  padding-left: 5%;
+  font-weight: lighter;
+  color: grey;
+  font-size: 0.8em;
+  font-style: italic;
+}
+.about p {
+  width: 80%;
+  padding-left: 5%;
+  font-size: 0.85rem;
+  font-weight: 300;
+}
+.about .benefits {
+  width: 80%;
+  padding-left: 5%;
+}
+.about .benefits h4 {
+  font-weight: 300;
+}
+.about li {
+  font-size: 0.85rem;
+  font-weight: 300;
+}
+.events p {
+  width: 80%;
+  padding-left: 10%;
+  font-size: 0.85rem;
+  font-weight: 300;
+}
+.events .attendees {
+  width: 80%;
+  padding-left: 5%;
+}
+.events .attendees h4 {
+  font-weight: 300;
+}
+.events .attendees p {
+  padding-left: 0;
+}
+.events .attendees a {
+  color: #77BEBB;
+}
+.events .attendees a:hover {
+  color: #438c89;
+}
+.events li {
+  font-size: 0.85rem;
+  font-weight: 300;
+}
+.projects img {
+  padding-left: 5%;
+}
+.partners ul {
+  max-height: 90px;
+}
+.partners ul li {
+  margin-left: 5%;
+  list-style-type: none;
+  display: inline-block;
+}
+.partners ul .arista img {
+  padding-bottom: 16px;
+}
+/*# sourceMappingURL=open-ics.1.0.0.css.map */
