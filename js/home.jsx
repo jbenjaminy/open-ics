@@ -20,19 +20,19 @@ var Home = React.createClass ({
 							<ul>
 								<li className='rectangle'>
 									<a href='http://www.cbronline.com/news/cloud/hybrid/google-reveals-hybrid-cloud-plans-with-openstack-4863087'>
-										<img src='http://www.cbronline.com/BRHome/ResizeImage/_Uploads_NewsArticle_4863087_main.jpg/1218/655/Details/0/0' alt='Hybrid Cloud' height='100' width='150'></img>
+										<img src='http://i.imgur.com/MuQbGgN.png?1' alt='Hybrid Cloud' height='100' width='150'></img>
 										<h4>"Google reveals hybrid cloud plans with OpenStack"</h4>
 									</a>
 								</li>
 								<li className='rectangle'>
 									<a href='http://www.cbronline.com/news/internet-of-things/smart-technology/smart-grid-startup-gets-funding-boost-from-3m-ventures-bill-gates-khosla-ventures-4978237'>
-										<img src='http://www.cbronline.com/BRHome/ResizeImage/_Uploads_NewsArticle_4978237_main.jpg/1218/655/Details/0/0' alt='Varentec' height='100' width='150'></img>
+										<img src='http://i.imgur.com/T3QwXKK.jpg?1' alt='Varentec' height='100' width='150'></img>
 										<h4>"Smart grid startup gets funding boost..."</h4>
 									</a>
 								</li>
 								<li className='rectangle'>
 									<a href='https://insights.ubuntu.com/2015/11/17/canonicals-openstack-autopilot-dramatically-reduces-cost-of-private/'>
-										<img src='http://cdn4.computerworlduk.com/cmsdata/features/3628191/openstack_logo_thumb800.jpg' alt='Openstack' height='100' width='150'></img>
+										<img src='http://i.imgur.com/k4jHq1V.jpg?1' alt='Openstack' height='100' width='150'></img>
 										<h4>"Canonical’s Openstack Autopilot dramatically reduces cloud costs"</h4>
 									</a>
 								</li>

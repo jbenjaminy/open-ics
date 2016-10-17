@@ -9,7 +9,7 @@ var Projects = React.createClass ({
 				<div className='main'>
 					<div className='projects content'>
 						<h2>Projects</h2>
-						<img src='zones&conduits-v4.png' alt='zones & conduits'/>
+						<img src='http://i.imgur.com/fzVXBls.png' alt='zones & conduits'/>
 					</div>
 				</div>
 			</div>
