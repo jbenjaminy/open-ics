@@ -2,7 +2,7 @@
   "name": "open-ics",
   "version": "1.0.0",
   "description": "The OpenICS Project webpage",
-  "main": "js/index.jsx",
+  "main": "server.js",
   "engines": {
     "node": "6.4.0"
   },
@@ -10,7 +10,7 @@
     "test": "mocha --compilers js:babel-register test/**/*.js*",
     "mkdir": "mkdir -p build",
     "build": "npm run clean && npm run mkdir && npm run build:html && npm run build:css && npm run build:js && npm run build:img",
-    "start": "http-server build/",
+    "start": "node server.js",
     "watch": "npm run watch:html & npm run watch:css & npm run watch:js & npm run watch:img",
     "clean": "rm -rf build",
     "build:html": "npm run clean:html && cp index.html build/",
@@ -25,7 +25,7 @@
     "build:img": "npm run clean:img && cp -r img/ build/",
     "clean:img": "rm -rf build/img/",
     "watch:img": "npm run build:img && webpack --watch",
-    "heroku post-build": "npm run build"
+    "heroku postbuild": "npm run build"
   },
   "author": "Ben Young",
   "license": "ISC",
@@ -38,6 +38,7 @@
   },
   "homepage": "http://open-ics.jbenjaminy.com",
   "dependencies": {
+    "express": "^4.14.0",
     "react": "^15.2.1",
     "react-dom": "^15.2.1",
     "react-router": "^2.6.0",
