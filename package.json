@@ -24,17 +24,19 @@
     "clean:js": "rm -f build/$npm_package_name.$npm_package_version.js build/$npm_package_name.$npm_package_version.js.map",
     "build:img": "npm run clean:img && cp -r img/ build/",
     "clean:img": "rm -rf build/img/",
-    "watch:img": "npm run build:img && webpack --watch"
+    "watch:img": "npm run build:img && webpack --watch",
+    "heroku post-build": "npm run build"
   },
   "author": "Ben Young",
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jbenjaminy/open_ics"
+    "url": "https://github.com/jbenjaminy/open-ics"
   },
   "bugs": {
-    "url": "https://github.com/jbenjaminy/open_ics/issues"
+    "url": "https://github.com/jbenjaminy/open-ics/issues"
   },
+  "homepage": "http://open-ics.jbenjaminy.com",
   "dependencies": {
     "react": "^15.2.1",
     "react-dom": "^15.2.1",
