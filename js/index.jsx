@@ -5,7 +5,7 @@ var router = require('react-router');
 var Route = router.Route;
 var IndexRoute = router.IndexRoute;
 
-import { applyRouterMiddleware, hashHistory, Router }  from 'react-router';
+import { applyRouterMiddleware, browserHistory, Router }  from 'react-router';
 import { useScroll } from 'react-router-scroll';
 
 var Nav = require('./nav');
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     ReactDOM.render(
       <Router 
-        history={hashHistory}
+        history={browserHistory}
         routes={routes}
         render={applyRouterMiddleware(useScroll())}
       />, document.getElementById('app'));
